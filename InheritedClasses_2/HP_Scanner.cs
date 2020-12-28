@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InheritedClasses_2
 {
-    class HP_Scanner : Scanner_2
+    class HP_Scanner : Scanner
     {
         public string name = "hp";
         public string model;
@@ -14,6 +14,11 @@ namespace InheritedClasses_2
         {
             this.model = model;
             this.price = price;
+        }
+
+        public override string ScanFromConsole()
+        {
+            return base.ScanFromConsole();
         }
     }
 }

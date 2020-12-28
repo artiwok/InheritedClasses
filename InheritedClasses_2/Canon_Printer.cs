@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InheritedClasses_2
 {
-    class Canon_Printer : Printer_2
+    class Canon_Printer : Printer
     {
         public string name = "canon";
         public string model;

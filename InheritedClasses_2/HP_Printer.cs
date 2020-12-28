@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InheritedClasses_2
 {
-    public class HP_Printer : Printer_2
+    class HP_Printer : Printer
     {
         public string name = "hp";
         public string model;
@@ -16,10 +16,10 @@ namespace InheritedClasses_2
             this.price = price;
         }
 
-        public override void PrintFromConsole(string x)
+        public override void Print(string x)
         {
             Console.WriteLine(name);
-            base.PrintFromConsole(x);
+            base.Print(x);
         }
     }
 }

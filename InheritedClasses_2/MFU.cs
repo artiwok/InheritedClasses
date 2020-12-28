@@ -4,14 +4,14 @@ using System.Text;
 
 namespace InheritedClasses_2
 {
-    public class MFU_2
+    class MFU
     {
         public string name;
         public string model;
         public int price;
-        public Printer_2 printer;
+        public Printer printer;
 
-        public MFU_2(string name, string model, int price, Printer_2 printer)
+        public MFU(string name, string model, int price, Printer printer)
         {
             this.name = name;
             this.model = model;
@@ -19,9 +19,9 @@ namespace InheritedClasses_2
             this.printer = printer;
         }
 
-        public void PrintFromPrinter_2(string x)
+        public void Print(string x)
         {
-            printer.PrintFromConsole(model);
+            printer.Print(model);
 
         }
     }
