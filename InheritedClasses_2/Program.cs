@@ -20,9 +20,15 @@ namespace InheritedClasses_2
 
             //Printer _printer = new Printer();
 
-            MFU multi = new MFU("xxx", "yyy", 1000, hp_printer);
+            MFU multi = new MFU("xxx", "yyy", 1000, hp_printer, hp_scanner);
 
             multi.Print("some text");
+
+            multi.Scan();
+
+            string str = multi.Scan();
+
+            Console.WriteLine(str);
         }
     }
 }

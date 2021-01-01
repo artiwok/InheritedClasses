@@ -10,19 +10,26 @@ namespace InheritedClasses_2
         public string model;
         public int price;
         public Printer printer;
+        public Scanner scanner;
 
-        public MFU(string name, string model, int price, Printer printer)
+        public MFU(string name, string model, int price, Printer printer, Scanner scanner)
         {
             this.name = name;
             this.model = model;
             this.price = price;
             this.printer = printer;
+            this.scanner = scanner;
         }
 
         public void Print(string x)
         {
             printer.Print(model);
 
+        }
+
+        public string Scan()
+        {
+            return scanner.ScanFromConsole();
         }
     }
 }
